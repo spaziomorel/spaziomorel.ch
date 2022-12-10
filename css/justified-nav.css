@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'Zurich';
+    src: url('zurich-light.ttf'); 
+    url('zurich-light.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Zurich';
+    src: url('zurich-bold.ttf'); 
+    url('zurich-bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
+/*yeah I don't wanna video speed controller to show up here thanks */
+.vsc-controller {
+	display: none;
+}
+
+
+body {
+  padding-top: 20px;
+  font-family: 'San Francisco', 'Zurich', Helvetica, Arial, san-serif;
+}
+
+.bla {
+	font: Arial;
+	  font-weight: bold;
+	  font-style: normal;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  width: 100%;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: #dedede;
+
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+.navbar {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7),to(#eee));
+  background-image: -webkit-linear-gradient(top, #f7f7f7 0%,#eee 100%);
+  background-image: -o-linear-gradient(top, #f7f7f7 0%,#eee 100%);
+  background-image: linear-gradient(to bottom, #f7f7f7 0%,#eee 100%);
+  border: 0px solid #e5e5e5;
+}
+
+/*disable navbar blue glow */
+
+
+.navbar button {
+outline: none !important;
+}
+/* end edits*/
+
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .navbar-nav .nav-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+/* video */
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+.english {
+	color: #c5c5c5;
+	font-style: oblique;
+	
+	
+}
+
+.col-lg-9 {
+	padding-bottom: 25px;
+}
+
+p {
+	font: 'San Francisco', Helvetica, Arial, san-serif;
+}
+/*
+.row li {
+	list-style: square;
+	
+}
+*/
+h1 {
+	  font-size: 1.4em;
+	  font-family: Zurich;
+	  font-weight: 800;
+	  letter-spacing: -0.25px;
+	  margin-bottom: 0px;
+	  padding: 2px;
+}
+
+
+/* image exhibit */
+.exhibition { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+a:active {
+	color: #000;
+}
+
+h2 { 
+   position: relative; 
+   bottom: 70px; 
+   right: 0; 
+   text-align: right;
+  /*font-size: 36px;     old */
+/*  font-size: 3.6vm;   /* IE9 */
+	  font-family: Zurich;
+	  font-weight: 800;
+	  text-shadow: 3px 3px 0px white; 
+	  padding-right: 15px;
+	  width: 100%;
+}
+
+
+
+ .prop-text{font-size:2.5em}
+    @media (max-width : 768px) {
+    .prop-text{font-size:2em}
+    }
+/* test h1 slanted */
+
+.button-default {
+  background-color: #fcd300;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.button-slanted {
+  -ms-transform: skewX(-17deg);
+  -webkit-transform: skewX(-17deg);
+  transform: skewX(-17deg);
+}
+
+.button-slanted-content {
+  -ms-transform: skewX(17deg);
+  -webkit-transform: skewX(17deg);
+  transform: skewX(17deg);  
+  display: inline-block;  
+  
+}
+
+
+/* press */
+
+.press li {
+	margin-bottom: 15px;
+	line-height: 20px;
+}
+
+
+
